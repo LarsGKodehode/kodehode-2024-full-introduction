@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Introduction</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <header class="shadow">
+      <h1 class="text-center">Task</h1>
+    </header>
+
+    <main>
+      <form class="flex gap padding" id="input-form">
+        <div class="flex w-full">
+          <label for="title">Title</label>
+          <input class="flex-grow" type="text" name="title" id="title" />
+        </div>
+
+        <div class="flex flex-col w-full">
+          <button class="flex-grow" type="submit">Add</button>
+          <button class="flex-grow" type="reset">Clear</button>
+        </div>
+      </form>
+
+      <ul class="flex flex-col gap padding" id="task-list">
+        <!-- This is a template and won't be rendered -->
+        <template id="task-card-template">
+          <li
+            class="shadow padding rounded flex w-1/2 min-w-content justify-between mx-auto hover:glow bg-gray"
+          >
+            <p class="text-xl">Some title</p>
+
+            <div class="flex flex-col gap">
+              <button data-card="update">Complete</button>
+              <button data-card="delete">Delete</button>
+            </div>
+          </li>
+        </template>
+      </ul>
+    </main>
+
+    <footer class="padding">
+      <p class="text-center">Made by ???</p>
+    </footer>
+  </body>
+</html>
