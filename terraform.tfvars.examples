@@ -1,0 +1,6 @@
+random_seed     = "seed"
+subscription_id = "your-subscription-id-here"
+
+# Source Code (Git)
+source_url    = "url to git repository"
+source_branch = "main"

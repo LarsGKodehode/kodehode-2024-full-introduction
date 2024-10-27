@@ -1,3 +1,20 @@
+# Nix
 .direnv
+
+# C# & .NET Artifacts
 obj
 bin
+
+# Local .terraform directories
+.terraform/
+
+# Ignore variable definition files with sensitive information
+*.tfvars
+*.tfvars.json
+
+# Ignore Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore any plan files (binary output of 'terraform plan')
+*.tfplan
